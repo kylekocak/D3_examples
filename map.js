@@ -7,7 +7,7 @@ async function drawMap() {
     .attr("class", "tooltip")
     .style("opacity", 1)
 	.text('Hello')
-	var dat = await d3.csv('soy.csv')
+	var dat = await d3.csv('nass.csv')
 	//var map = await d3.json('us-10m.v1.json')
 	const specs=d3.map(dat, function(d){return d.year}).keys()
 	var us = await d3.json("https://unpkg.com/us-atlas@1/us/10m.json")
